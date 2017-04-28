@@ -1,0 +1,11 @@
+package com.king.turman.wiki;
+
+/**
+ * Created by diaoqf on 2017/4/28.
+ */
+
+public class Contents {
+
+    public static final String WIKI_KEY = "vWA/lGbpTlwYkx54070GXYIcu1T2tQ3BkG6N3B7oxmphsqUeijF69VJE7tlGjmFdPS+0L+hBAlwvRJR1CpFX/FyjjFiAhnxUPyctbWPRduV7XNKv7KFjykOBxkKb54lpdur5ElPQIikUum+1P6bIsBLFwU+oHNo8Yss3cJGbB4hTYWx0ZWRfXyGADYpOHTvCAC6LnECLSNUi1WnGqacZPDaZB6f38K896bVS9uztTubVHeejxxcRIWFUNp/6oJLxfJ/OKSg/pGF05Z+7fqhRDKwcO+3e6wkbU+YBLyICO9/3shRx9q7ODJgY2sNvEmhTYqm5j5ejefGcxVWfHR0h+r5L/d9QeRZqykjkxKzcOE/3gTnW09CkOy/TsHgiY962CG2AawllA49OkRvbjeen1XXoJSXjzTK8AbS7SLRkgEnTYo0QOTU+WRQVAeugFN236hev4BGhaQO4YAit9ftcVx/P7JQ7SE9O6Sa0uzz9wMPPXFs+yirVtmdOHpHJOEn1jfberCYKZm3gIp6QjikOPYwiDbk8D6dQUJs9ATsapquyBt12EZBMZBpHXnKuy9glIl4gd+DPGSk2lutWqxkzR/JrSRl/7ljtNofBzq9v2HcMnqb6VLf5fBOP0LVFUCRdPkzQV4EqSFURZox+quKDUN47YIugT/2Il54KdQkQBM4=";
+
+}
