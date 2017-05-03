@@ -12,7 +12,8 @@ var World = {
 			Important: If you replace the tracker file with your own, make sure to change the target name accordingly.
 			Use a specific target name to respond only to a certain target or use a wildcard to respond to any or a certain group of targets.
 		*/
-        this.targetCollectionResource = new AR.TargetCollectionResource("assets/magazine.wtc", {});
+		//要跟踪的对象
+        this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker_1.wtc", {});
 
         this.tracker = new AR.ImageTracker(this.targetCollectionResource, {
             onTargetsLoaded: this.worldLoaded,
@@ -25,8 +26,9 @@ var World = {
 			The next step is to create the augmentation. In this example an image resource is created and passed to the AR.ImageDrawable. A drawable is a visual component that can be connected to an IR target (AR.ImageTrackable) or a geolocated object (AR.GeoObject). The AR.ImageDrawable is initialized by the image and its size. Optional parameters allow for position it relative to the recognized target.
 		*/
 
+        //要显示的图片
 		/* Create overlay for page one */
-		var imgOne = new AR.ImageResource("assets/imageOne.png");
+		var imgOne = new AR.ImageResource("assets/resul.jpg");
 		var overlayOne = new AR.ImageDrawable(imgOne, 1, {
 			translate: {
 				x:-0.15
