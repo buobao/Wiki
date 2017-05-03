@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         super.onPostCreate(savedInstanceState);
         architectView.onPostCreate();
         try {
-            architectView.load("file:///android_asset/image_rec/index.html");
+            architectView.load("file:///android_asset/advance_image_rec/index.html");
         } catch (IOException e) {
             e.printStackTrace();
         }

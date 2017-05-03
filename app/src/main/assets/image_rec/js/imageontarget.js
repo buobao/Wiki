@@ -36,13 +36,21 @@ var World = {
 
 		});
 
+        this.imgButton = new AR.ImageResource("assets/wwwButton.jpg");
+		var pageTwoButton = this.createWwwButton("https://www.baidu.com", 0.15, {
+        			translate: {
+        				y: -0.25
+        			},
+        			zOrder: 1
+        		});
+
 		/*
 			The last line combines everything by creating an AR.ImageTrackable with the previously created tracker, the name of the image target and the drawable that should augment the recognized image.
 			Please note that in this case the target name is a wildcard. Wildcards can be used to respond to any target defined in the target collection. If you want to respond to a certain target only for a particular AR.ImageTrackable simply provide the target name as specified in the target collection.
 		*/
 		var pageOne = new AR.ImageTrackable(this.tracker, "*", {
 			drawables: {
-				cam: overlayOne
+				cam: [overlayOne,pageTwoButton]
 			},
 			onImageRecognized: this.removeLoadingBar,
             onError: function(errorMessage) {
@@ -50,7 +58,12 @@ var World = {
             }
 		});
 	},
-
+	createWwwButton: function createWwwButtonFn(url, size, options) {
+		options.onClick = function() {
+			AR.context.openInBrowser(url);
+		};
+		return new AR.ImageDrawable(this.imgButton, size, options);
+	},
 	removeLoadingBar: function() {
 		if (!World.loaded) {
 			var e = document.getElementById('loadingMessage');
